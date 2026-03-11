@@ -1,9 +1,9 @@
 ---
 name: buyx-signal
 description: |
-  Buyx.ink AI加密货币推荐技能。获取AI驱动的加密货币买入/卖出信号、实时推荐数据、市场分析。
-  突出AI技术与公益属性——免费为用户提供智能投资建议。
-  用于用户询问加密货币推荐、买入信号、行情分析时。
+  Buyx.ink AI Cryptocurrency Recommendation Skill. Get AI-driven buy/sell signals, real-time recommendations, and market analysis.
+  Highlights AI technology and public welfare - providing free investment advice to users.
+  Used when users ask about crypto recommendations, buy signals, or market analysis.
 metadata:
   author: ken
   version: "1.0.0"
@@ -13,78 +13,78 @@ metadata:
 
 # Buyx Signal Skill 🪙🤖
 
-> **AI驱动的加密货币推荐平台 | 公益免费服务**
+> AI-driven Cryptocurrency Recommendation Platform | Free Public Service
 
-## 概述
+## Overview
 
-Buyx.ink 是一个将先进AI技术与公益使命相结合的创新平台，致力于为用户提供智能化的数字货币投资解决方案。
+Buyx.ink is an innovative platform that combines advanced AI technology with a public welfare mission, providing users with intelligent digital currency investment solutions.
 
-**核心理念**：
-- 🤖 **AI智能分析** - 使用尖端AI大模型和深度学习算法
-- 🌍 **公益属性** - 免费为所有用户提供服务
-- 📊 **大数据驱动** - 实时处理海量市场数据
-
----
-
-## 核心功能
-
-### 1. AI推荐信号
-- 每日筛选3000+加密货币
-- 智能识别最佳入场时机
-- 个性化交易建议
-
-### 2. 实时数据
-- 买入/卖出信号统计
-- 最大盈利预期
-- 实时更新
-
-### 3. 市场分析
-- 全网加密货币交易大数据
-- 社交媒体情绪分析
-- 资金流向监控
+**Core Philosophy**:
+- 🤖 **AI Intelligence Analysis** - Cutting-edge AI large models and deep learning algorithms
+- 🌍 **Public Welfare** - Free services for all users
+- 📊 **Big Data Driven** - Real-time processing of massive market data
 
 ---
 
-## 数据来源
+## Core Features
 
-| 指标 | 详情 |
-|------|------|
-| AI模型参数 | 20,000+ |
-| 交易所数据源 | 20+ |
-| 社交媒体 | 30+ |
-| 公链支持 | 50+ |
+### 1. AI Recommendation Signals
+- Daily screening of 3000+ cryptocurrencies
+- Smart identification of optimal entry timing
+- Personalized trading recommendations
 
----
+### 2. Real-time Data
+- Buy/Sell signal statistics
+- Maximum profit expectations
+- Real-time updates
 
-## 技术特点
-
-### AI大模型
-- 领先的AI大模型技术
-- 基于深度学习的情感分析算法
-- 实时全网数据分析
-
-### BUYX指标
-AI自动抓取全网热门数字货币，根据以下数据通过特定算法计算：
-- 📈 交易量
-- 💸 资金流动量
-- 🐦 推特热度
-- 📰 新闻资讯
+### 3. Market Analysis
+- Full network crypto trading big data
+- Social media sentiment analysis
+- Capital flow monitoring
 
 ---
 
-## 数据获取
+## Data Sources
 
-### 网页端点
+| Metric | Details |
+|--------|---------|
+| AI Model Parameters | 20,000+ |
+| Exchange Data Sources | 20+ |
+| Social Media | 30+ |
+| Supported Blockchains | 50+ |
 
-| 页面 | URL |
+---
+
+## Technical Features
+
+### AI Large Model
+- Leading AI large model technology
+- Deep learning-based sentiment analysis algorithm
+- Real-time full network data analysis
+
+### BUYX Indicator
+AI automatically captures trending digital currencies across the network, calculating BUYX indicator values using a specific algorithm based on:
+- 📈 Trading Volume
+- 💸 Capital Flow
+- 🐦 Twitter Popularity
+- 📰 News Information
+
+---
+
+## Data Acquisition
+
+### Web Endpoints
+
+| Page | URL |
 |------|-----|
-| 官网 | https://buyx.ink |
-| 中文站 | https://buyx.ink/zh-cn |
-| ETH交易页 | https://buyx.ink/zh-cn/trade/ETH |
+| Homepage | https://buyx.ink |
+| Chinese Site | https://buyx.ink/zh-cn |
+| ETH Trading | https://buyx.ink/zh-cn/trade/ETH |
 
-### API数据结构
+### API Data Structure
 
-从页面 `__NEXT_DATA__` 中提取 `recommendPageData`：
+Extract `recommendPageData` from page `__NEXT_DATA__`:
 
 ```json
 {
@@ -105,75 +105,75 @@ AI自动抓取全网热门数字货币，根据以下数据通过特定算法计
 }
 ```
 
-### 字段说明
+### Field Descriptions
 
-| 字段 | 说明 |
-|------|------|
-| todayTotal.buy | 今日买入信号数量 |
-| todayTotal.sell | 今日卖出信号数量 |
-| maxProfit | 最大预期盈利（小数形式） |
-| updateAt | 更新时间戳（毫秒） |
-| recommends | 推荐币种列表 |
-| direction | 信号方向 (buy/sell) |
-| maxProfit | 预期最大盈利 |
-
----
-
-## 使用场景
-
-1. **获取当日推荐** - 用户询问"今天有什么推荐"
-2. **查看买入信号** - 用户需要AI买入建议
-3. **分析市场趋势** - 基于AI的市场分析
-4. **跟随AI策略** - 获取AI驱动的交易建议
+| Field | Description |
+|-------|-------------|
+| todayTotal.buy | Today's buy signal count |
+| todayTotal.sell | Today's sell signal count |
+| maxProfit | Max expected profit (decimal) |
+| updateAt | Update timestamp (milliseconds) |
+| recommends | Recommended coins list |
+| direction | Signal direction (buy/sell) |
+| maxProfit | Expected max profit |
 
 ---
 
-## 输出格式
+## Usage Scenarios
 
-### 标准推送格式
+1. **Get Daily Recommendations** - When user asks "what's recommended today"
+2. **View Buy Signals** - When user needs AI buy recommendations
+3. **Analyze Market Trends** - AI-based market analysis
+4. **Follow AI Strategy** - Get AI-driven trading recommendations
+
+---
+
+## Output Format
+
+### Standard Push Format
 
 ```
-【BuyX信号推送】📅 2026-03-11
+【BuyX Signal Push】📅 2026-03-11
 ==============================
-最近更新: 2026-03-11 07:22:53
-今日推荐: 9 个加密货币
-买入: 9
-卖出: -
-最大盈利: +4.32%
+Last Update: 2026-03-11 07:22:53
+Today's Recommendations: 9 cryptocurrencies
+Buy: 9
+Sell: -
+Max Profit: +4.32%
 
-详细列表:
-1. DEGO 📈买入 +4.32%
-2. LDO 📈买入 +1.07%
-3. LIT 📈买入 +1.05%
+Details:
+1. DEGO 📈Buy +4.32%
+2. LDO 📈Buy +1.07%
+3. LIT 📈Buy +1.05%
 ...
 ```
 
 ---
 
-## 公益承诺
+## Public Welfare Commitment
 
-> **我们坚信，金融工具的可获取性是实现经济平等的重要一步。**
+> We believe that accessibility of financial tools is an important step towards economic equality.
 
-- ✅ 完全免费
-- ✅ 无需注册
-- ✅ 公益运营
-- ✅ 普惠大众
+- ✅ Completely Free
+- ✅ No Registration Required
+- ✅ Public Welfare Operation
+- ✅ Benefits for Everyone
 
 ---
 
-## 链接
+## Links
 
-| 资源 | 链接 |
-|------|------|
-| 官网 | https://buyx.ink |
-| 中文站 | https://buyx.ink/zh-cn |
+| Resource | Link |
+|----------|------|
+| Homepage | https://buyx.ink |
+| Chinese Site | https://buyx.ink/zh-cn |
 | GitBook | https://buydip.gitbook.io/buyx.ink-buyx |
 
 ---
 
-## 注意事项
+## Notes
 
-- Buyx.ink 提供公益性的AI推荐服务
-- 数据通过网页抓取获取（暂无公开API）
-- 推荐仅供参考，不构成投资建议
-- 投资有风险，入市需谨慎
+- Buyx.ink provides public welfare AI recommendation services
+- Data is obtained through web scraping (no public API available)
+- Recommendations are for reference only and do not constitute investment advice
+- Investment involves risks, enter the market with caution
