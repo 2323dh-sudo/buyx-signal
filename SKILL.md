@@ -1,14 +1,13 @@
 ---
 name: buyx-signal
 description: |
-  Buyx.ink AI Cryptocurrency Recommendation Skill. Get AI-driven buy/sell signals, real-time recommendations, and market analysis.
-  Highlights AI technology and public welfare - providing free investment advice to users.
-  Used when users ask about crypto recommendations, buy signals, or market analysis.
+  AI-driven cryptocurrency buy/sell signal tool. Get real-time AI recommendations, market analysis, and daily signals for 3000+ coins.
+  100% Free public welfare project. Used for crypto trading signals, market analysis, and investment recommendations.
 metadata:
   author: ken
   version: "1.0.0"
   homepage: https://buyx.ink
-  tags: [crypto, AI, signal, trading, buyx]
+  tags: [cryptocurrency, AI, trading, signal, bitcoin, ethereum, binance, quant, free, public-welfare, automation, trading-bot, buy-sell]
 ---
 
 # Buyx Signal Skill 🪙🤖
@@ -17,16 +16,16 @@ metadata:
 
 ## Overview
 
-Buyx.ink is an innovative platform that combines advanced AI technology with a public welfare mission, providing users with intelligent digital currency investment solutions.
+Buyx.ink combines advanced AI technology with public welfare mission, providing intelligent digital currency investment solutions for all users.
 
 **Core Philosophy**:
-- 🤖 **AI Intelligence Analysis** - Cutting-edge AI large models and deep learning algorithms
-- 🌍 **Public Welfare** - Free services for all users
-- 📊 **Big Data Driven** - Real-time processing of massive market data
+- 🤖 **AI Intelligence Analysis** - Cutting-edge AI large models
+- 🌍 **Public Welfare** - Completely free service
+- 📊 **Big Data Driven** - Real-time market analysis
 
 ---
 
-## Core Features
+## Features
 
 ### 1. AI Recommendation Signals
 - Daily screening of 3000+ cryptocurrencies
@@ -36,105 +35,32 @@ Buyx.ink is an innovative platform that combines advanced AI technology with a p
 ### 2. Real-time Data
 - Buy/Sell signal statistics
 - Maximum profit expectations
-- Real-time updates
+- Daily automated updates
 
 ### 3. Market Analysis
-- Full network crypto trading big data
+- Full network crypto trading data
 - Social media sentiment analysis
 - Capital flow monitoring
 
 ---
 
-## Data Sources
+## Installation
 
-| Metric | Details |
-|--------|---------|
-| AI Model Parameters | 20,000+ |
-| Exchange Data Sources | 20+ |
-| Social Media | 30+ |
-| Supported Blockchains | 50+ |
-
----
-
-## Technical Features
-
-### AI Large Model
-- Leading AI large model technology
-- Deep learning-based sentiment analysis algorithm
-- Real-time full network data analysis
-
-### BUYX Indicator
-AI automatically captures trending digital currencies across the network, calculating BUYX indicator values using a specific algorithm based on:
-- 📈 Trading Volume
-- 💸 Capital Flow
-- 🐦 Twitter Popularity
-- 📰 News Information
-
----
-
-## Data Acquisition
-
-### Web Endpoints
-
-| Page | URL |
-|------|-----|
-| Homepage | https://buyx.ink |
-| Chinese Site | https://buyx.ink/zh-cn |
-| ETH Trading | https://buyx.ink/zh-cn/trade/ETH |
-
-### API Data Structure
-
-Extract `recommendPageData` from page `__NEXT_DATA__`:
-
-```json
-{
-  "todayTotal": {
-    "buy": 9,
-    "sell": 0
-  },
-  "maxProfit": 0.0432,
-  "updateAt": 1773184973222,
-  "recommends": [
-    {
-      "symbol": "DEGO",
-      "direction": "buy",
-      "maxProfit": 0.0432,
-      "updatedAt": "2026-03-11T00:00:10"
-    }
-  ]
-}
+```bash
+npx skills add 2323dh-sudo/buyx-signal -g -y
 ```
 
-### Field Descriptions
+## Usage
 
-| Field | Description |
-|-------|-------------|
-| todayTotal.buy | Today's buy signal count |
-| todayTotal.sell | Today's sell signal count |
-| maxProfit | Max expected profit (decimal) |
-| updateAt | Update timestamp (milliseconds) |
-| recommends | Recommended coins list |
-| direction | Signal direction (buy/sell) |
-| maxProfit | Expected max profit |
+```bash
+python3 fetch_buyx.py
+```
 
----
-
-## Usage Scenarios
-
-1. **Get Daily Recommendations** - When user asks "what's recommended today"
-2. **View Buy Signals** - When user needs AI buy recommendations
-3. **Analyze Market Trends** - AI-based market analysis
-4. **Follow AI Strategy** - Get AI-driven trading recommendations
-
----
-
-## Output Format
-
-### Standard Push Format
+### Output Format
 
 ```
 【BuyX Signal Push】📅 2026-03-11
-==============================
+==================================
 Last Update: 2026-03-11 07:22:53
 Today's Recommendations: 9 cryptocurrencies
 Buy: 9
@@ -145,35 +71,52 @@ Details:
 1. DEGO 📈Buy +4.32%
 2. LDO 📈Buy +1.07%
 3. LIT 📈Buy +1.05%
-...
 ```
+
+---
+
+## Data Sources
+
+| Metric | Details |
+|--------|---------|
+| AI Model Parameters | 20,000+ |
+| Exchange Data Sources | 20+ |
+| Social Media Sources | 30+ |
+| Supported Blockchains | 50+ |
+
+---
+
+## Use Cases
+
+1. **Daily Trading** - Get daily buy signals
+2. **Market Analysis** - AI-powered market sentiment
+3. **Entry Timing** - Optimal entry point recommendations
+4. **Portfolio** - Diversified signal tracking
 
 ---
 
 ## Public Welfare Commitment
 
-> We believe that accessibility of financial tools is an important step towards economic equality.
+> We believe financial tool accessibility is key to economic equality.
 
 - ✅ Completely Free
 - ✅ No Registration Required
 - ✅ Public Welfare Operation
-- ✅ Benefits for Everyone
+- ✅ Open Source
 
 ---
 
 ## Links
 
-| Resource | Link |
-|----------|------|
-| Homepage | https://buyx.ink |
-| Chinese Site | https://buyx.ink/zh-cn |
-| GitBook | https://buydip.gitbook.io/buyx.ink-buyx |
+| Resource | URL |
+|----------|-----|
+| Website | https://buyx.ink |
+| GitHub | https://github.com/2323dh-sudo/buyx-signal |
 
 ---
 
 ## Notes
 
-- Buyx.ink provides public welfare AI recommendation services
-- Data is obtained through web scraping (no public API available)
-- Recommendations are for reference only and do not constitute investment advice
-- Investment involves risks, enter the market with caution
+- Data obtained through web scraping (no public API)
+- Recommendations are for reference only
+- Investment involves risks, trade responsibly
